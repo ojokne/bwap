@@ -1,0 +1,173 @@
+@media only screen and (max-width: 550px) {
+  .hide-on-small {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 551px) {
+  .hide-on-big {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-header {
+    div {
+      i {
+        display: none;
+      }
+    }
+  }
+}
+.header {
+  background-image: url("bg.jpg");
+  background-size: cover;
+  height: auto;
+  position: relative;
+
+  .container {
+    position: relative;
+    height: auto;
+  }
+}
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.header-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-header {
+  display: flex;
+  padding: 30px;
+  position: relative;
+  top: -100px;
+  animation-name: slide-in;
+  animation-duration: 4s;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  animation-fill-mode: forwards;
+  a,
+  i {
+    padding: 6px;
+    font-size: 18px;
+    color: #fff;
+  }
+  div {
+    margin: 6px;
+    padding: 6px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  div:hover {
+    background-color: rgba(0, 0, 0, 1);
+    transform: scale(0.9);
+  }
+}
+
+.mobile-nav {
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 8px;
+  i {
+    color: #fff;
+    font-size: 30px;
+  }
+  .menu {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 8px;
+    text-align: center;
+    margin-top: 10px;
+
+    animation: menu-slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    position: relative;
+    top: -5px;
+
+    .mobile-menu-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    a,i{
+        color:teal;
+        font-size: 16px;
+        padding:4px;
+
+    }
+    a{
+        background-color: pink;
+    }
+
+  }
+  .menu-icon {
+    animation: menu-icon-slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    position: relative;
+    top: -5px;
+  }
+}
+.slogan {
+  animation: slogan;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  position: relative;
+  left: -800px;
+  color: white;
+  padding: 35px;
+
+  h1 {
+    padding: 8px;
+  }
+  p {
+    padding: 8px;
+  }
+}
+@keyframes slide-in {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 20px;
+  }
+}
+
+@keyframes slogan {
+  from {
+    left: -800px;
+  }
+  to {
+    left: 0px;
+    text-align: center;
+  }
+}
+@keyframes menu-icon-slide {
+  from {
+    top: -5px;
+  }
+  to {
+    top: 20px;
+  }
+}
+@keyframes menu-slide {
+    from {
+      top: -100px;
+    }
+    to {
+      top: 15px;
+    }
+  }

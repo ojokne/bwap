@@ -1,0 +1,52 @@
+@media only screen and (max-width: 500px) {
+  .footer {
+    p,
+    i,
+    a {
+      font-size: 10px;
+    }
+  }
+}
+
+//*  small to big screens
+@media only screen and (min-width: 325px) {
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+}
+
+.footer {
+  background-color: black;
+
+  p {
+    color: #fff;
+    padding: 5px;
+  }
+  a {
+    color: white;
+    opacity: 0.6;
+    padding: 6px;
+  }
+
+  a:hover {
+    opacity: 0.9;
+  }
+
+  i {
+    padding: 6px;
+  }
+}
+
+.social-icons {
+  padding: 8px;
+  margin: 8px;
+}
+
+.nav-footer {
+  padding: 8px;
+  margin: 8px;
+}
