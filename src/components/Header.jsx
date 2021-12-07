@@ -83,7 +83,7 @@ function Header() {
         </div>
         <div className="slogan">
           <h1>Bwap construction Company limited</h1>
-          <p>From concept to creation</p>
+          <p>From concept to creation, build with architectural plans</p>
         </div>
       </div>
     </div>
