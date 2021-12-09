@@ -1,4 +1,4 @@
-import { FaCheckCircle, FaTwitter } from "react-icons/fa";
+import { FaCheckCircle} from "react-icons/fa";
 const Services = () => {
   return (
     <div className="services">

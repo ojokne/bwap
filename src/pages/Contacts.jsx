@@ -5,9 +5,7 @@ import {
   FaPhone,
   FaTwitterSquare,
   FaWhatsappSquare,
-  FaYoutubeSquare,
 } from "react-icons/fa";
-import { Link } from "react-router-dom";
 const Contacts = () => {
   //** state for social icons
   const social = [

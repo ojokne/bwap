@@ -3,9 +3,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    
     .item{
       position: absolute;
       top:40vh;
+      
       .dots{
         border: 10px solid black;
         border-radius: 50%;
