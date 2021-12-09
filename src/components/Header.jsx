@@ -8,7 +8,6 @@ import {
   FaGraduationCap,
   FaHome,
   FaPhoneSquare,
-  FaPhotoVideo,
   FaTimes,
 } from "react-icons/fa";
 
@@ -29,14 +28,9 @@ function Header() {
       text: "Services",
     },
     {
-      to: "#",
+      to: "/projects",
       icon: <FaBuilding />,
       text: "Projects",
-    },
-    {
-      to: "#",
-      icon: <FaPhotoVideo />,
-      text: "Gallery",
     },
     {
       to: "/contacts",

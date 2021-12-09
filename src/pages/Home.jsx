@@ -1,4 +1,4 @@
-import { FaBuilding, FaGavel, FaPhotoVideo } from "react-icons/fa";
+import { FaBuilding, FaGavel, FaCertificate } from "react-icons/fa";
 import { Link } from "react-router-dom";
 function Home() {
   return (
@@ -23,7 +23,7 @@ function Home() {
             </div>
             <p>We offer a variety of quality servives</p>
             <p>
-              <Link to="#">
+              <Link to="/services">
                 <button>Read More &raquo;</button>
               </Link>
             </p>
@@ -41,7 +41,7 @@ function Home() {
               of satisfied customers
             </p>
             <p>
-              <Link to="#">
+              <Link to="projects">
                 <button>Read More &raquo;</button>
               </Link>
             </p>
@@ -50,16 +50,15 @@ function Home() {
           <div className="section-content">
             <div className="flex">
               <i>
-                <FaPhotoVideo />
+                <FaCertificate />
               </i>
-              <h4>Gallery</h4>
+              <h4>Company Profile</h4>
             </div>
             <p>
-              Check out our gallery container quality images from our completed
-              and on going projects
+              This section contains all the legal information about the comapny
             </p>
             <p>
-              <Link to="#">
+              <Link to="/profile">
                 <button>Read More &raquo;</button>
               </Link>
             </p>

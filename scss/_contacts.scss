@@ -35,16 +35,17 @@
     flex-wrap: wrap;
     justify-content: center;
 
-    i {
+    a {
       padding: 10px;
-      font-size: 40px;
+      font-size: 30px;
+      color: #000;
       animation: anime;
       animation-duration: 3s;
       animation-iteration-count: infinite;
       animation-direction: alternate;
     }
 
-    i:hover {
+    a:hover {
       transform: scale(0.9);
       cursor: pointer;
     }

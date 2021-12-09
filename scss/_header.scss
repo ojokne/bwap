@@ -99,8 +99,9 @@
     margin-top: 10px;
 
     animation: menu-slide;
-    animation-duration: 3s;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
+    animation-direction: alternate;
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     position: relative;
     top: -5px;
@@ -121,7 +122,7 @@
   }
   .menu-icon {
     animation: menu-icon-slide;
-    animation-duration: 3s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     position: relative;
@@ -130,7 +131,7 @@
 }
 .slogan {
   animation: slogan;
-  animation-duration: 5s;
+  animation-duration: 4s;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
   position: relative;

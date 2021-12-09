@@ -3,14 +3,16 @@ import {
   FaBuilding,
   FaCertificate,
   FaCopyright,
+  FaEnvelope,
   FaFacebookSquare,
   FaGavel,
   FaGraduationCap,
+  FaHome,
   FaInstagramSquare,
+  FaPhone,
   FaPhoneSquare,
-  FaPhotoVideo,
   FaTwitterSquare,
-  FaYoutubeSquare,
+  FaWhatsappSquare,
 } from "react-icons/fa";
 
 const year = new Date();
@@ -19,37 +21,38 @@ function Footer() {
   // ** link set one
   const links = [
     {
-      to: "#",
+      to: "/",
+      icon: <FaHome />,
+      text: "Home",
+    },
+    {
+      to: "/profile",
       icon: <FaCertificate />,
       text: "Profile",
     },
     {
-      to: "#",
+      to: "/services",
       icon: <FaGavel />,
       text: "Services",
     },
-    {
-      to: "#",
-      icon: <FaBuilding />,
-      text: "Projects",
-    },
+    
   ];
 
   //** link set two
 
   const links2 = [
     {
-      to: "#",
-      icon: <FaPhotoVideo />,
-      text: "Gallery",
+      to: "/projects",
+      icon: <FaBuilding/>,
+      text: "Projects",
     },
     {
-      to: "#",
+      to: "/contacts",
       icon: <FaPhoneSquare />,
       text: "Contacts",
     },
     {
-      to: "#",
+      to: "/careers",
       icon: <FaGraduationCap />,
       text: "Careers",
     },
@@ -58,20 +61,28 @@ function Footer() {
   //** state for social icons
   const social = [
     {
-      to: "#",
+      to: "https://www.instagram.com/invites/contact/?i=1fyzxubcrc0nk&utm_content=m9u9fte",
       icon: <FaFacebookSquare />,
     },
     {
-      to: "#",
+      to: "https://twitter.com/Bwap16?s=09",
       icon: <FaTwitterSquare />,
     },
     {
-      to: "#",
+      to: "https://www.instagram.com/invites/contact/?i=1fyzxubcrc0nk&utm_content=m9u9fte",
       icon: <FaInstagramSquare />,
     },
     {
-      to: "#",
-      icon: <FaYoutubeSquare />,
+      to: "https://wa.me/256778384850",
+      icon: <FaWhatsappSquare />,
+    },
+    {
+      to: "mailto: bwap.ltd@gmail.com",
+      icon: <FaEnvelope />,
+    },
+    {
+      to: "tel:0778384850",
+      icon: <FaPhone />,
     },
   ];
   return (
@@ -101,9 +112,9 @@ function Footer() {
 
           <div className="social-icons">
             {social.map((link, index) => (
-              <Link to={link.to} key={index}>
+              <a href={link.to} key={index}>
                 <i>{link.icon}</i>
-              </Link>
+              </a>
             ))}
             <p>
               <i>
