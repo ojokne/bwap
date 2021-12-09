@@ -15,6 +15,11 @@
     padding: 12px;
     border-radius: 5px;
     box-shadow: 2px 2px 4px grey;
+    transition-property: all;
+    transition-duration: 1s;
+  }
+  .contact-item:hover {
+    transform: translateY(-18px);
   }
   p {
     margin-bottom: 13px;

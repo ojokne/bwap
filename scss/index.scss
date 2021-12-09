@@ -1,22 +1,23 @@
 @import "reset";
-@import 'utilities';
-@import 'header';
-@import 'footer';
-@import 'home';
-@import 'spinner';
-@import 'profile';
-@import 'careers';
-@import 'contacts';
-@import 'services';
+@import "utilities";
+@import "header";
+@import "footer";
+@import "home";
+@import "spinner";
+@import "profile";
+@import "careers";
+@import "contacts";
+@import "services";
 
 body {
   background-color: #eee;
-  p{
+  p {
     line-height: 1.6em;
   }
+  font-family: 'Raleway', sans-serif;
 }
 
-.slide-page{
+.slide-page {
   animation: slide;
   animation-duration: 3s;
   animation-timing-function: linear;
@@ -25,7 +26,7 @@ body {
 }
 
 @keyframes slide {
-  to{
+  to {
     opacity: 1;
   }
 }
