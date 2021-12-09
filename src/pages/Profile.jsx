@@ -15,6 +15,7 @@ const Profile = () => {
               successfully handed several projects to accommodate small and
               medium sized companies. Our long established client base reads as
               the industry who's who.
+            </p>
               <div>
               <h2>Company Information</h2>
                 <div className='company-flex'>
@@ -26,7 +27,7 @@ const Profile = () => {
                 <p>80020001479518</p>  
                 </div>
             </div>
-            </p>
+            
           </div>
           <div>
             <div className='profile-item'>
