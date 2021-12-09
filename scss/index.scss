@@ -3,36 +3,16 @@
 @import 'header';
 @import 'footer';
 @import 'home';
-
+@import 'spinner';
+@import 'profile';
+@import 'careers';
+@import 'contacts';
+@import 'services';
 
 body {
   background-color: #eee;
-}
-.spinner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  .item{
-    position: absolute;
-    top:40vh;
-    .dots{
-      border: 10px solid black;
-      border-radius: 50%;
-      animation: spinner;
-      animation-duration: 1s;
-      animation-iteration-count: infinite;
-      animation-direction: alternate;
-      display: inline-block;
-      margin: 2px;
-    }
-    .dots:nth-child(2){
-      border-color: grey;
-      animation-delay: .4s;
-    }
-    .dots:nth-child(3){
-      animation-delay: .6s;
-    }
+  p{
+    line-height: 1.6em;
   }
 }
 
@@ -44,11 +24,6 @@ body {
   opacity: 0;
 }
 
-@keyframes spinner {
-  to{
-    transform:translateY(20px)
-  }
-}
 @keyframes slide {
   to{
     opacity: 1;

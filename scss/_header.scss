@@ -1,20 +1,20 @@
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 680px) {
   .hide-on-small {
     display: none;
   }
 }
 @media only screen and (min-width: 1000px) {
-  .slogan{
-  h1{
-    font-size: 40px;
-  }
-  p{
-    font-size: 20px;
-  }
+  .slogan {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 20px;
+    }
   }
 }
 
-@media only screen and (min-width: 551px) {
+@media only screen and (min-width: 679px) {
   .hide-on-big {
     display: none;
   }
@@ -104,22 +104,20 @@
     animation-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
     position: relative;
     top: -5px;
-
-    .mobile-menu-grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+    .mobile-menu-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
     }
 
-    a,i{
-        color:teal;
-        font-size: 16px;
-        padding:4px;
-
+    a,
+    i {
+      color: teal;
+      font-size: 16px;
+      padding: 4px;
     }
-    a{
-        background-color: pink;
+    a {
+      background-color: pink;
     }
-
   }
   .menu-icon {
     animation: menu-icon-slide;
@@ -174,10 +172,10 @@
   }
 }
 @keyframes menu-slide {
-    from {
-      top: -100px;
-    }
-    to {
-      top: 15px;
-    }
+  from {
+    top: -100px;
   }
+  to {
+    top: 15px;
+  }
+}

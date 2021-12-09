@@ -1,0 +1,51 @@
+@media only screen and (min-width: 1000px) {
+  .contacts {
+    .container {
+      h2 {
+        text-align: center;
+      }
+    }
+  }
+}
+
+.contacts {
+  .contact-item {
+    margin: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+  }
+  p {
+    margin-bottom: 13px;
+  }
+  h2 {
+    border-bottom: 2px solid red;
+    text-align: right;
+    margin: 10px 0;
+    padding: 4px;
+  }
+  .contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    i {
+      padding: 10px;
+      font-size: 40px;
+      animation: anime;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+
+    i:hover {
+      transform: scale(0.9);
+      cursor: pointer;
+    }
+  }
+}
+@keyframes anime {
+  to {
+    transform: translateY(10px);
+  }
+}

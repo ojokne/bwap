@@ -1,0 +1,36 @@
+@media only screen and (min-width: 700px) {
+    .services{
+        .service-item{
+            max-width: 300px;
+
+    
+        }
+        .services-flex{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+  }
+.services{
+    
+    .service-item{
+        margin: 10px;
+        background-color: #fff;
+        padding: 12px;
+        border-radius: 5px;
+
+    }
+    .services-flex{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        h2{
+            border-bottom: 2px solid red;
+            text-align: right;
+            padding: 3px;
+            margin: 8px;
+        }
+    }
+}

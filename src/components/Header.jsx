@@ -6,6 +6,7 @@ import {
   FaCertificate,
   FaGavel,
   FaGraduationCap,
+  FaHome,
   FaPhoneSquare,
   FaPhotoVideo,
   FaTimes,
@@ -16,9 +17,14 @@ function Header() {
     setMenu(!menu);
   };
   const mainNav = [
-    { to: "#", icon: <FaCertificate />, text: "Profile" },
     {
-      to: "#",
+      to: "/",
+      icon: <FaHome />,
+      text: "Home",
+    },
+    { to: "/profile", icon: <FaCertificate />, text: "Profile" },
+    {
+      to: "/services",
       icon: <FaGavel />,
       text: "Services",
     },
@@ -33,12 +39,12 @@ function Header() {
       text: "Gallery",
     },
     {
-      to: "#",
+      to: "/contacts",
       icon: <FaPhoneSquare />,
       text: "Contacts",
     },
     {
-      to: "#",
+      to: "/careers",
       icon: <FaGraduationCap />,
       text: "Careers",
     },
@@ -71,7 +77,7 @@ function Header() {
               <div className="menu">
                 {mainNav.map((link, index) => (
                   <div key={index}>
-                    <Link to={link.to} className="mobile-menu-grid">
+                    <Link to={link.to} className="mobile-menu-grid" onClick={showMenu}>
                       <i>{link.icon}</i>
                       {link.text}
                     </Link>

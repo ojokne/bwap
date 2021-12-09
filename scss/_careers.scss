@@ -1,0 +1,30 @@
+@media only screen and (min-width: 1000px) {
+  .careers {
+    .container {
+      h2 {
+        text-align: left;
+      }
+    }
+  }
+}
+.careers {
+
+  p {
+    margin-bottom: 13px;
+  }
+  h2 {
+    border-bottom: 2px solid red;
+    text-align: right;
+    margin: 10px 0;
+    padding: 4px;
+  }
+  .vacancy {
+    color: red;
+  }
+  .career-item {
+    margin: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+  }
+}

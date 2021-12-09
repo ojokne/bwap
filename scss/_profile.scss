@@ -1,0 +1,43 @@
+@media only screen and (min-width: 750px) {
+  .profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    grid-auto-columns: minmax(100px, auto);
+
+    .span-div {
+      grid-column: 1/3;
+    }
+  }
+}
+
+.profile {
+  p {
+    margin-bottom: 13px;
+  }
+  h2 {
+    border-bottom: 2px solid red;
+    text-align: right;
+    margin: 10px 0;
+    padding: 4px;
+  }
+
+  .span-div {
+    .company-flex {
+      display: flex;
+      justify-content: space-between;
+
+      i {
+        padding-right: 2px;
+      }
+    }
+   
+  }
+  .profile-item {
+    margin: 10px;
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 5px;
+  }
+}
