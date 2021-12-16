@@ -41,7 +41,7 @@ const Projects = () => {
     },
     {
       src: ham_palm,
-      text: " Ham Palm Villa",
+      text: " Ham Palm Villas",
       link: "/ham_palm",
     },
     {
@@ -58,14 +58,14 @@ const Projects = () => {
           {images.map((image, index) => {
             return (
               <div className="project-item " key={index}>
-                <figure>
-                  <img src={image.src} alt="" />
-                  <figcaption>
-                    <Link to={image.link}>
+                <Link to={image.link}>
+                  <figure>
+                    <img src={image.src} alt="" />
+                    <figcaption>
                       <h3>{image.text}</h3>
-                    </Link>
-                  </figcaption>
-                </figure>
+                    </figcaption>
+                  </figure>
+                </Link>
               </div>
             );
           })}
