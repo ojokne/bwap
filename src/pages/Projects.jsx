@@ -7,6 +7,8 @@ import flowershop from "../img/flowershop.jpeg";
 import nol from "../img/nol.jpeg";
 import ham_agro from "../img/ham_agro.jpeg";
 import ham_palm from "../img/ham_palm.jpeg";
+import maple from "../img/maple.jpg";
+import ham_sport from "../img/ham_sport.jpg";
 const Projects = () => {
   const images = [
     {
@@ -45,9 +47,19 @@ const Projects = () => {
       link: "/ham_palm",
     },
     {
+      src: maple,
+      text: " Maple Leaf Villa Kabale",
+      link: "/maple",
+    },
+    {
       src: ham_agro,
       text: " Ham agro processing Factory",
       link: "/ham_agro",
+    },
+    {
+      src: ham_sport,
+      text: " Hamz Sport Club",
+      link: "/ham_sport",
     },
   ];
 

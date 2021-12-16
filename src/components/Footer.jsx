@@ -13,6 +13,7 @@ import {
   FaPhoneSquare,
   FaTwitterSquare,
   FaWhatsappSquare,
+  FaYoutubeSquare,
 } from "react-icons/fa";
 
 const year = new Date();
@@ -35,7 +36,6 @@ function Footer() {
       icon: <FaGavel />,
       text: "Services",
     },
-    
   ];
 
   //** link set two
@@ -43,7 +43,7 @@ function Footer() {
   const links2 = [
     {
       to: "/projects",
-      icon: <FaBuilding/>,
+      icon: <FaBuilding />,
       text: "Projects",
     },
     {
@@ -83,6 +83,10 @@ function Footer() {
     {
       to: "tel:0778384850",
       icon: <FaPhone />,
+    },
+    {
+      to: "https://www.youtube.com/channel/UCWQkk8qRWQzlnnsA_Zuw27g",
+      icon: <FaYoutubeSquare />,
     },
   ];
   return (

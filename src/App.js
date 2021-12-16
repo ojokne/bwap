@@ -17,6 +17,8 @@ import Nol from "./pages/projects/Nol";
 import Flowershop from "./pages/projects/Flowershop";
 import HamAgro from "./pages/projects/HamAgro";
 import HamPalm from "./pages/projects/HamPalm";
+import Maple from "./pages/projects/Maple";
+import HamSport from "./pages/projects/HamSport";
 
 function App() {
   let [loading, setLoading] = useState(true);
@@ -51,6 +53,8 @@ function App() {
             <Route path="/flowershop" element={<Flowershop />} />
             <Route path="/ham_agro" element={<HamAgro />} />
             <Route path="/ham_palm" element={<HamPalm />} />
+            <Route path="/maple" element={<Maple />} />
+            <Route path="/ham_sport" element={<HamSport />} />
           </Routes>
           <Footer />
         </div>

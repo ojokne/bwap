@@ -5,6 +5,7 @@ import {
   FaPhone,
   FaTwitterSquare,
   FaWhatsappSquare,
+  FaYoutubeSquare,
 } from "react-icons/fa";
 const Contacts = () => {
   //** state for social icons
@@ -33,6 +34,10 @@ const Contacts = () => {
       to: "tel:0778384850",
       icon: <FaPhone />,
     },
+    {
+      to: "https://www.youtube.com/channel/UCWQkk8qRWQzlnnsA_Zuw27g",
+      icon: <FaYoutubeSquare />,
+    },
   ];
   return (
     <div className="contacts">
@@ -44,7 +49,7 @@ const Contacts = () => {
           </p>
           <h2>Get in touch with us</h2>
           <div className="contact-flex">
-          {social.map((link, index) => (
+            {social.map((link, index) => (
               <a href={link.to} key={index}>
                 <i>{link.icon}</i>
               </a>
