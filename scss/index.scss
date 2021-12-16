@@ -8,14 +8,15 @@
 @import "careers";
 @import "contacts";
 @import "services";
-@import 'projects';
+@import "projects";
+@import "individualProject";
 
 body {
   background-color: #eee;
   p {
     line-height: 1.6em;
   }
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .slide-page {

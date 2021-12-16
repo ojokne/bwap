@@ -1,42 +1,38 @@
 @media only screen and (min-width: 700px) {
-    .projects {
-      .project-item {
-        max-width: 400px;
-        margin: 10px;
-      }
-      .projects-flex {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-      }
+  .projects {
+    .project-item {
+      max-width: 400px;
+      margin: 10px;
+    }
+    .projects-flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
+}
 
 .projects {
-    .project-flex{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
+  .project-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   figure {
     background-color: #fff;
     border-radius: 5px;
     // box-shadow: 2px 2px 4px grey;
     transition-property: all;
     transition-duration: 1s;
-    padding-bottom: 10px;
     img {
       width: 100%;
     }
-
   }
   figure:hover {
     transform: translateY(-18px);
   }
-  figcaption{
-      text-align: center;
-      padding:10px;
-
-    
+  figcaption {
+    text-align: center;
+    padding: 10px;
   }
 }
